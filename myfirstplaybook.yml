@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasts:
+  - name: i want to install webserver on ubuntu node
+    apt:
+      name: apache2
+      state: present
+  - name: i want to install tree on ubuntu node
+    apt:
+      name: tree
+      state: present

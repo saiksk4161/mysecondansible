@@ -1,7 +1,7 @@
 ---
 - hosts: all
   become: yes
-  tasts:
+  tasks:
   - name: i want to install webserver on ubuntu node
     apt:
       name: apache

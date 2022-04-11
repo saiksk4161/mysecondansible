@@ -4,7 +4,7 @@
   tasts:
   - name: i want to install webserver on ubuntu node
     apt:
-      name: apache2
+      name: apache
       state: present
   - name: i want to install tree on ubuntu node
     apt:

@@ -6,6 +6,6 @@
 172.31.22.55
 172.31.66.88
 
-[[mywebserver]:vars]
+[mywebserver:vars]
 mywebpackageubuntu = apache2
 mywebpackageredhat = httpd

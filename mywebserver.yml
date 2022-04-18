@@ -7,9 +7,21 @@
       name: "{{mywebpackageubuntu}}"
       state: present
     when: ansible_os_family == "Debian"  
+  
+  - name:
+    service:
+      name: "{{mywebpackageubuntu}}"
+      state: present
+    when: ansible_os_family == "Debian"  
 
   - name: i want to install webserver on Redhat node
     yum:
       name: "{{mywebpackageredhat}}"
       state: present
     when: ansible_os_family == "RedHat"    
+
+  - name:
+    service:
+      name: "{{mywebpackageredhat}}"
+      state: present
+    when: ansible_os_family == "RedHat"  

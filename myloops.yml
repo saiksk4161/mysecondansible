@@ -2,9 +2,9 @@
 - hosts: mywebserver
   become: yes
   tasks:
-  - name: 
+  - name: install webserver on ubuntu
     apt:
-      name: "{{item}}"
+      name: "{{ item }}"
       state: present
     loop:
     - git
